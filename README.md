@@ -38,11 +38,11 @@ just a demo for rest api design
     post   /api/auth/register                       register a new user
     post   /api/auth/login                          login
     delete /api/auth/logout            	            logout
-    post   /api/auth/emailconfirmation/{token}'     email confirmation after registration
+    put    /api/auth/emailconfirmation/{token}'     email confirmation after registration
     post   /api/auth/sendresetemail                 send reset link if forgot password
-    delete /api/auth/resetpassword            	    reset password after clicked reset link
+    post   /api/auth/resetpassword            	    reset password after clicked reset link
     put    /api/auth/activate/{id}                  user activation
-    put    /api/auth/me                             get auth user
+    get    /api/auth/me                             get auth user
     put    /api/auth/refresh                        refresh token
     
     get    /api/user              	        get all users
