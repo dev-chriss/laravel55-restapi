@@ -10,7 +10,6 @@
         "tymon/jwt-auth": "dev-develop",
         "dingo/api": "2.0.0-alpha1",
         "barryvdh/laravel-cors": "^0.9.3",
-        "florianv/laravel-swap": "^1.1",
         "jeremykenedy/laravel-roles": "^1.1"
     },
     "require-dev": {
