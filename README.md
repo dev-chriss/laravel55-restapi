@@ -53,4 +53,4 @@ just a demo for rest api design
 ```
 
 ## Info
-Base template from [francescomalatesta/laravel-api-boilerplate-jwt](https://github.com/francescomalatesta/laravel-api-boilerplate-jwt) 
+Base template from [francescomalatesta/laravel-api-boilerplate-jwt] (https://github.com/francescomalatesta/laravel-api-boilerplate-jwt) 
