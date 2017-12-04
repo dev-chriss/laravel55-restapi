@@ -9,7 +9,7 @@ For frontend example, im using [vue2-adminlte](https://github.com/chrissetyawan/
 ```
 
 - Login, Register with email confirmation, Forgot password, Change password
-- Email notification to user
+- Email and notification example
 - CRUD example, User Management
 - Role based restriction, jeremykenedy/laravel-roles
 - JWT-Auth - tymon/jwt-auth
@@ -35,17 +35,21 @@ $ php artisan serve (to run the website)
 just a demo for rest api design
 
 ```
-    demo： user, post
+    post   /api/auth/register                       register a new user
+    post   /api/auth/login                          login
+    delete /api/auth/logout            	            logout
+    post   /api/auth/emailconfirmation/{token}'     email confirmation after registration
+    post   /api/auth/sendresetemail                 send reset link if forgot password
+    delete /api/auth/resetpassword            	    reset password after clicked reset link
+    put    /api/auth/activate/{id}                  user activation
+    put    /api/auth/me                             get auth user
+    put    /api/auth/refresh                        refresh token
     
-    post   /api/auth/register              	 register a new user
-    post   /api/auth/login              	 login
-    put    /api/auth/authorizations/current   refresh token
-    delete /api/auth/logout            	 logout
-    
-    post   /api/user              	 create a user
-    get    /api/user/5            	 user detail
-    put    /api/user/5            	 update a user
-    delete /api/user/5            	 delete a user
+    get    /api/user              	    get all users
+    post   /api/user              	    create a user
+    get    /api/user/{idfilter}         view user with specific criteria
+    put    /api/user/{id}            	update a user
+    delete /api/user/{id}           	delete a user
 ```
 
 ## Info
