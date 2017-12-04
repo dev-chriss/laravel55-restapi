@@ -45,8 +45,8 @@ just a demo for rest api design
     get    /api/auth/me                             get auth user
     put    /api/auth/refresh                        refresh token
     
-    get    /api/user              	             get all users
-    post   /api/user              	             create a user
+    get    /api/user              	            get all users
+    post   /api/user              	            create a user
     get    /api/user/{idfilter}                     view user with specific criteria
     put    /api/user/{id}            	            update a user
     delete /api/user/{id}           	            delete a user
